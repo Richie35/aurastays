@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Book — AuraStays</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container navbar-inner">
+        <a href="index.html" class="logo"
+          ><img src="images/logo.png" alt="AuraStays.ng logo"
+        /></a>
+        <nav class="nav-links">
+          <a href="apartments.html">Apartments</a>
+          <a href="cars.html">Cars</a>
+          <a href="boats.html">Boats</a>
+          <a href="contact.html" class="nav-cta">Book Now</a>
+        </nav>
+      </div>
+    </header>
+    <section class="page-header">
+      <div class="container">
+        <span class="hero-eyebrow">Get In Touch</span>
+        <h1>Book Your Next Experience</h1>
+        <p>
+          Tell us what you need — an apartment, a car, or a boat — and we'll get
+          back to you quickly.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h3>Reach Us Directly</h3>
+          <p class="contact-item">
+            📱 WhatsApp<br /><a href="https://wa.me/2347055525114"
+              >0705 552 5114</a
+            >
+          </p>
+          <p class="contact-item">
+            📷 Instagram<br /><a
+              href="https://instagram.com/aurastays.ng"
+              target="_blank"
+              >@aurastays.ng</a
+            >
+          </p>
+          <p class="contact-item">📍 Location<br />Lagos, Nigeria</p>
+          <p class="contact-note">
+            Prefer to chat directly? WhatsApp is usually the fastest way to
+            reach us.
+          </p>
+        </div>
+
+        <form
+          class="booking-form"
+          id="booking-form"
+          action="https://formspree.io/f/mzepdzny"
+          method="POST"
+        >
+          <h3>Send a Booking Inquiry</h3>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="service">What are you interested in?</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="apartment">Apartment</option>
+            <option value="car">Car Rental</option>
+            <option value="boat">Boat Rental</option>
+          </select>
+
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="message">Additional Details</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Tell us more about what you need..."
+          ></textarea>
+
+          <button type="submit" class="btn-primary">Send Inquiry</button>
+
+          <p class="form-success" id="form-success">
+            Thank you! Your inquiry has been received — we'll be in touch
+            shortly.
+          </p>
+        </form>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
